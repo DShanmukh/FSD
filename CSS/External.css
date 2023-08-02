@@ -1,0 +1,18 @@
+.Ex{
+	color: white;
+	border:none;
+	background-color: red;
+	border-radius: 18px;
+	width: 100px;
+	height: 36px;
+	font-family: cursive;
+	cursor: pointer;
+	transition: color 0.15s,background-color 0.15s;
+}
+.Ex:hover{
+	color: red;
+	background-color: white;
+}
+.Ex:active{
+	background-color: YELLOW;
+}

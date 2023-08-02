@@ -1,0 +1,20 @@
+.image1{
+	background-image:url('https://c4.wallpaperflare.com/wallpaper/366/967/641/planet-clouds-backgrounds-light-star-wallpaper-preview.jpg') ;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h1{
+	color: red;
+	font-family: cursive;
+	font-size: 50px;
+}
+.image2{
+	background-image:url('images/krishna.jpg') ;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.image3{
+	background-image:url('images/krishna1.jpg') ;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
