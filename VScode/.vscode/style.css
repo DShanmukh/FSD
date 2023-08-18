@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+}
+.Image{
+    height: 100vh;
+    width: 100%;
+    
+}
+.fav-image{
+    width:  400px;
+    height:200px;
+    background-image: url(../img/"C:\Users\SHANMUKH.LAPTOP-7MF2KQ7E\Downloads\36928.jpg");
+}

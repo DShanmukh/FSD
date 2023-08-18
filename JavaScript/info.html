@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JAVA SCRIPT INFO</title>
+</head>
+<body>
+	<h1>JAVA SCRIPT INFO</h1>
+	<script type="text/javascript" src="Info.js"></script><br><br>
+	<script>
+		var a = 100;
+		var c = "Shanmukh";
+		c+=" D";
+		document.write("welcome to javascript</br>");
+		document.write("<br>The value of a is :",a)
+		console.log(a)
+		document.write("<br><br>"+c);
+		document.write("<br><br>"+c.length);
+		var d="Shanmukh"
+		var e="Sai"
+		var f="Aditya"
+		document.write("<br><br>"+d+" "+e+", "+f+" "+"<br><br>")
+		// how to the type of a variable
+		var a=12.32; //float is a treated as a number 
+		document.write(typeof(a))
+		// Arrays
+		var arr = ["Shanmukh","Sai","Aditya","Ganesh"]
+		console.log(arr)
+		document.write("<br>"+typeof(arr)+"<br><br>")// it show as a object
+		document.write(arr[2]+" "+arr[3])
+		// Object
+		var obj = [{
+			'name':'Shanmukh',
+			'rollno':'21A91A04K0',
+			'college':'AEC',
+			'branch':'ECE'
+			},
+			{
+			'name':'Sai',
+			'rollno':'21A91A04M7',
+			'college':'AEC',
+			'branch':'ECE',
+		},
+			{
+			'name':'Aditya',
+			'rollno':'21A91A04P6',
+			'college':'AEC',
+			'branch':'ECE',
+		},
+		{
+			'name':'Ganesh',
+			'rollno':'21A91A04K1',
+			'college':'AEC',
+			'branch':'ECE',
+		},
+	]
+	for(let i=0;i<obj.length;i++)
+	{
+		document.write("<br>"+Object.values(obj[i])+"<br><br>");
+	}
+	for(let i=0;i<obj.length;i++)
+	{
+		document.write(obj[i].rollno)
+	}
+
+	</script>
+</body>
+</html>

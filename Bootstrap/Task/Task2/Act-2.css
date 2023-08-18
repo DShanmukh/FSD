@@ -1,0 +1,112 @@
+.a{
+	margin-right: 10px;
+	border: 2px solid lightgrey;
+	margin-top: 10px;
+}
+.i1{
+	color: skyblue;
+	font-size: 50px;
+	float: left;
+}
+.i2{
+	color: orange;
+	font-size: 50px;
+	float: left;
+}
+.i3{
+	color: green;
+	font-size: 50px;
+	float: left;
+}
+.i4{
+	color: red;
+	font-size: 50px;
+}
+.s0{
+	float: right;
+	font-weight: bold;
+}
+.s1{
+	float: right;
+	margin-left: 10px;
+}
+.i5{
+	color: red;
+	font-size: 50px;
+	float: right;
+}
+.p2{
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+}
+.i6{
+	color: green;
+	font-size: 50px;
+	float: right;
+}
+.p3{
+	color: green;
+	font-weight: bold;
+	font-size: 20px;
+}
+.i7{
+	color: orange;
+	font-size: 50px;
+	float: right;
+}
+.p4{
+	color: orange;
+	font-weight: bold;
+	font-size: 20px;
+}
+.i8{
+	color: skyblue;
+	font-size: 50px;
+	float: right;
+}
+.p5{
+	color: skyblue;
+	font-weight: bold;
+	font-size: 20px;
+}
+.i9{
+	color: skyblue;
+	font-size: 50px;
+	float: right;
+}
+.p6{
+	color: skyblue;
+	font-weight: bold;
+	font-size: 20px;
+}
+.i10{
+	color: orange;
+	font-size: 50px;
+	float: right;
+}
+.p7{
+	color: orange;
+	font-weight: bold;
+	font-size: 20px;
+}
+.i11{
+	color: green;
+	font-size: 50px;
+	float: right;
+}
+.p8{
+	color: green;
+	font-weight: bold;
+	font-size: 20px;
+}
+.i12{
+	color: red;
+	font-size: 50px;
+	float: right;
+}
+.p9{
+	color: red;
+	font-weight: bold;
+	font-size: 20px;
+}

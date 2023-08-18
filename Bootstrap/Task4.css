@@ -1,0 +1,35 @@
+.c{
+  box-shadow: 5px 5px 4px black;
+  margin-top: 20px;
+  width: 400px;
+  height: 400px;
+}
+.i1{
+  width: 100px;
+  height: 100px;
+}
+.b{
+  margin-top: 20px;
+}
+.s1{
+  margin-left: 40px;
+}
+.s2{
+  float: right;
+  margin-right: 10px;
+}
+.s3{
+  font-weight: normal;
+  margin-left: 40px;
+  color: grey;
+}
+.o{
+  margin-left: 50px;
+  width: 5px;
+  height: 40px;
+}
+.op{
+  margin-left: 50px;
+  width: 5px;
+  height: 40px;
+}

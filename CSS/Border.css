@@ -11,10 +11,10 @@
 }
 .hina
 {
-	border-width: 10px;
+	border-width: 20px;
 	border-color: red;
 	border-style: solid;
-	border-top-color: green;
-	border-image-repeat: round;
-	border-image-width: 20px;
+	border-image-source: url('https://png.pngtree.com/png-clipart/20230508/original/pngtree-blue-red-gradient-transparent-page-border-design-png-image_9150607.png');
+	border-image-width: 30px;
+	border-image-slice: 40;
 }

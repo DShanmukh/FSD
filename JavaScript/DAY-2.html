@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day-2</title>
+</head>
+<body>
+  <script>
+    var obj = [{
+			'name':'Shanmukh',
+			'rollno':'21A91A04K0',
+			'college':'AEC',
+			'branch':'ECE'
+			},
+			{
+			'name':'Sai',
+			'rollno':'21A91A04M7',
+			'college':'AEC',
+			'branch':'ECE',
+		},
+			{
+			'name':'Aditya',
+			'rollno':'21A91A04P6',
+			'college':'AEC',
+			'branch':'ECE',
+		},
+		{
+			'name':'Ganesh',
+			'rollno':'21A91A04K1',
+			'college':'AEC',
+			'branch':'ECE',
+		},
+	]
+	// for(let i=0;i<obj.length;i++)
+	// {
+	// 	document.write("<br>"+Object .values(obj[i])+"<br><br>");
+	// }
+  for (var i=0;i < obj.lenght;i++){
+    for(key in obj[i])
+    {
+      document.write(obj[i][key])
+    }
+    document.write("<br>");
+  }
+  </script>
+</body>
+</html>

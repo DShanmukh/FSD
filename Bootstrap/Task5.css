@@ -1,0 +1,49 @@
+.i1{
+  color: green;
+  font-size: 20px;
+  margin-top: 20px;
+  display: inline;
+  float: left;
+}
+.c{
+  width: 810px;
+  height: 100px;
+  margin: 10px;
+}
+.sp1{
+  margin-left: 25px;
+  margin-top: 15px;
+  line-height: 5px;
+  display: inline;
+  
+}
+.sp2{
+  margin-left: 25px;
+  color: grey;
+  display: inline;
+  font-size: 10px;
+}
+.i2{
+  float: right;
+  font-size: 15px;
+
+}
+.d2{
+  float: right;
+}
+.sp3{
+  float: right;
+  font-size: 10px;
+}
+.sp4{
+  margin-top:5px;
+}
+.w{
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  float: right;
+}
+.ca{
+  margin: 100px;
+}
