@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class</title>
+</head>
+<body>
+  <script>
+    class Car{
+    constructor(modal,color,maf)
+    {
+      this.m=modal;
+      this.c=color;
+      this.o=maf;
+      this.get = function(){
+        return this.m+" "+this.c;
+      }
+    }
+  }
+  let ce = new Car("Bugatti","blue",2023)
+  let i = new Car("Lamborghani","orange",2023)
+  let  h = new Car("Astron Martin","blue",2023)
+  let k = new Car("Ford","blue",2023)
+  document.write(ce.m+" "+ce.c+" "+ce.o+"<br>")
+  document.write(i.m+" "+i.c+" "+i.o+"<br>")
+  document.write(h.m+" "+h.c+" "+h.o+"<br>")
+  document.write(k.m+" "+k.c+" "+k.o+"<br>")
+  document.write(i.get())
+  </script>
+</body>
+</html>

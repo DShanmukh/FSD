@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays</title>
+</head>
+<body>
+  <script>
+    // const names=["shanmukh","aditya","sai","ganesh","krishna","radha  "]
+    // for(var i=0;i<names.length;i++)
+    // {
+    //   document.write(names[i]+"<br>");
+    // }
+    // SPREAD operations
+    const arr = [10,20,30,40]
+    document.write(arr+"<br>");
+    document.write(...arr+"<br>");
+    const arr1 = [2,4,...arr];
+    document.write(arr1+"<br>")
+    // string 
+    const s ="Shanmukh"
+    document.write(s+"<br>")
+    console.log(...s)
+    let arr3 = [...arr,"shanmukh",...arr1]
+    document.write(arr3)
+
+  </script>
+</body>
+</html>

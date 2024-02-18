@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balloon task</title>
+</head>
+<body>
+  <div id="d" style="background-image: url('1.jpg');border: 5px solid black; width: 330px;height: 598px;background-repeat: no-repeat;float: left;margin-right: 40px;" onmouseover="over()" onmouseout="out()"></div>
+  <div id="e" style="background-image: url('6.avif');border: 5px solid black; width: 450px;height: 500px;background-repeat: no-repeat;float:left" onmouseover="over1()" onmouseout="out1()"></div>
+  <div id="f" style="background-image: url('https://img.freepik.com/premium-vector/birthday-cake-with-strawberries_68633-120.jpg?size=626&ext=jpg&ga=GA1.1.1133061435.1691209619&semt=ais');border: 5px solid black; width: 450px;height: 500px;background-repeat: no-repeat;float:left ; margin-left: 50px;" onmouseover="over2()" onmouseout="out2()"></div>
+  
+  <script>
+    function over()
+    {
+      document.getElementById('d').innerHTML = "<img src = '2.jpg' style ='width: 330px;height: 598px;filter:blur(10%)'> "
+    }
+    function out()
+    {
+      document.getElementById('d').innerHTML = "<img src = '1.jpg' style ='width: 330px;height: 598px;'>"
+    }
+    function over1()
+    {
+      document.getElementById('e').innerHTML = "<img src = '7.avif' style ='width: 450px;height: 500px;filter:blur(10%)'> "
+    }
+    function out1()
+    {
+      document.getElementById('e').innerHTML = "<img src = '6.avif' style ='width: 450px;height: 500px;'>"
+    }
+    function over2()
+    {
+      document.getElementById('f').innerHTML = "<img src = 'https://img.freepik.com/free-vector/birthday-cake-sweet-cream-pie-with-candles-illustration_1284-52975.jpg?size=626&ext=jpg&ga=GA1.1.1133061435.1691209619&semt=ais' style ='width: 450px;height: 500px;filter:blur(10%)'> "
+    }
+    function out2()
+    {
+      document.getElementById('f').innerHTML = "<img src = 'https://img.freepik.com/premium-vector/birthday-cake-with-strawberries_68633-120.jpg?size=626&ext=jpg&ga=GA1.1.1133061435.1691209619&semt=ais' style ='width: 450px;height: 500px;'>"
+    }
+  </script>
+</body>
+</html>

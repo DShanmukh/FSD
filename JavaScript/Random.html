@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Number</title>
+</head>
+<body>
+  <center><h1>Random Picker</h1>
+  <input type="radio" name="d" onclick="getnum('1')">1
+  <input type="radio" name="d" onclick="getnum('2')">2
+  <input type="radio" name="d" onclick="getnum('3')">3
+  <input type="radio" name="d" onclick="getnum('4')" >4<br><br>
+  <div id="place" style="width: 100px;height: 30px ; border:2px solid red;font-size: 30px ;"></div><br>
+  <button onclick="b1()" style="width: 100px;height: 50px; border: none;border-radius: 30px;background-color: dodgerblue;color: white;">Start</button>
+  <p id="l"></p>
+  <p id="out">fif</p>
+  <p id="out"></p>
+  
+</center>
+<script>
+  
+    function getnum(val)
+    {
+      let v = document.getElementById('place').value;
+      document.getElementById('place').innerText = val;
+      let x =Math.floor(( Math.random(0) * 4)+1) ;
+    document.getElementById('l').innerText = x;
+     
+    }
+    function b1(val){
+      if(x == val)
+      {
+        document.getElementById('out').innerHTML ='You Won'
+      }
+      else
+      {
+        document.getElementById('out').innerHTML='You Loss'
+      }
+    }
+    
+</script>
+</body>
+</html>

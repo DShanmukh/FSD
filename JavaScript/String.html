@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Methods</title>
+</head>
+<body>
+   <!-- <script>
+    let str = 'shanmukh'
+    let str1 = new String('Duvvuri')
+    document.write(str)
+   </script> -->
+   <table border="1" cellspacing="0" cellpadding="10px">
+   <tr><td>_</td>
+     <td>s</td>
+    <td>_</td>
+    <td>h</td>
+    <td>_</td>
+    <td>a</td>
+    <td>_</td>
+    <td>n</td>
+    <td>_</td>
+    <td>m</td>
+    <td>_</td>
+    <td>u</td>
+    <td>_</td>
+    <td>k</td>
+    <td>_</td>
+    <td>h</td>
+    <td>_</td>
+
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+  </tr>
+   </table>
+   <script>
+    // let s='Drive Ready'
+    // document.write('<i>'+s+'</i>');
+    function getstr(str){
+      document.write("<b>"+str+"</b><br>");
+    }
+    let name ="_S_h_a_n_m_u_k_h_"
+    getstr(name)//string
+    getstr(name.length);//lenght of the string
+    getstr(name.charAt(9));// character at some index
+    getstr(name.indexOf("h"))//index of a character
+    getstr(name.lastIndexOf('h'));
+    let g ="SHANMUKH  ";
+    getstr(g.toLowerCase()+'<br>');
+    getstr(name.toUpperCase()+'<br>');
+    let f = "Duvvuri"
+    getstr(g.concat(f)+'<br>');
+    getstr(g.trim().concat(f));
+    let m = "Krishna"
+    console.log(m.startsWith('K'))
+    console.log(m.endsWith("a"))
+    //slice
+     getstr(g.slice(1,4))
+     getstr(g.substring(3,5))
+     getstr(g.substring(1,5))
+     getstr(g.substring(-1))
+   </script>
+</body>
+</html>

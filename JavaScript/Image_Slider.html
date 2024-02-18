@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+</head>
+<body>
+  <script>
+    var i=0;
+    var img = [];
+    var time = 1000;
+    img[0] = '1.jpg';
+    img[1] = '2.jpg';
+    img[2] = '3.jpg';
+    img[3] = '4.jpg';
+    img[4] = '5.jpg';
+    function t(){
+      document.slide.src =img[i];
+      if(i<img.length-1){
+        i++;
+      }
+      else{
+        i=0;
+      }
+      setTimeout("t()",time)
+    }
+    window.onload = t;
+  </script>
+  <center><img name="slide" width="1400" height="900"></center>
+</body>
+</html>

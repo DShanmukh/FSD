@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      display:block;
+    }
+    form {
+      background-color: #fff;
+      width: 50%;
+      margin-left: 30%;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 2, 1);
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    form:hover {
+      background-color: #ffcccc;
+    }
+
+    input[type="text"], input[type="password"], input[type="tel"], select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      cursor: pointer;
+    }
+
+    input[type="button"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+      background-color: #0056b3;
+    }
+
+    #phon {
+      width: 100%;
+      height: 30px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Register Here</h1><br/>
+  <form id="my">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" required placeholder="Enter your First Name"><br>
+
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" required placeholder="Enter your Last Name"><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required placeholder="Enter your Email"><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required placeholder="Enter your password"><br>
+
+    <label for="phon">Phone No:</label>
+    <input type="tel" id="phon" name="phon" required placeholder="Enter your Phone Number"><br>
+
+    <label for="colleges">Select Authorities:</label>
+    <select name="colleges">
+      <option>Select Authorities</option>
+      <option value="power grid">Power Grid</option>
+      <option value="forest">FOREST</option>
+      <option value="NHAI">NHAI</option>
+    </select><br><br>
+
+    <input type="button" onclick="submit()" value="Submit">
+  </form>
+
+  <p>Already registered..? <a href="#" onclick="login">Login</a></p>
+
+  <script>
+    function submit() {
+      let form = document.getElementById('my');
+      form.submit(); 
+    }
+    function login() {
+      window.location.href = 'event.html';
+    }
+  </script>
+</body>
+</html>

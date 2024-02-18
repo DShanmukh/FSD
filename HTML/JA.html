@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>image</title>
+  <style>
+    img{
+      margin: 100px 15px 10px 10px;
+      border: 2px solid red;
+
+    }
+  </style>
+</head>
+<body>
+  <center><div style="width: 1000px; height:500px;border: 2px solid red;border-radius: 10px;background-color: aqua;">
+    <div style="width: 600px;height: 400px;float: left;">
+      <div style="width :200px;height: 400px;float: left;"><img src="1.jpg" width="80%" height="80%" onclick="t()" ></div>
+      <div style="width :200px;height: 400px; float: left;"><img src="2.jpg" width="80%" height="80%" onclick="r()"></div>
+      <div style="width :200px;height: 400px; float: right;"><img src="3.jpg" width="80%" height="80%" onclick="s()" ></div>
+    </div>
+    <div style="width: 400px;height: 400px;float: left;" id="d"></div>
+</div></center>
+<script>
+  function t()
+  {
+    document.getElementById('d').innerHTML = "<img src='1.jpg'style='width:80%;height:80%'>";
+    
+  }
+  function r()
+  {
+    document.getElementById('d').innerHTML = "<img src='2.jpg' style='width:80%;height:80%'>";
+    
+  }
+  function s()
+  {
+    document.getElementById('d').innerHTML = "<img src='3.jpg' style='width:80%;height:80%'>";
+  }
+</script>
+</body>
+</html>

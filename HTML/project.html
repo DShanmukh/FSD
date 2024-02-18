@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
+    <style>
+      *{
+        color: #333;
+      }
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f8f8f8;
+    }
+    
+    /* Navbar styles */
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: #001E1E;
+    }
+    
+    button {
+        background-color: transparent;
+        color: royalblue;
+        border: 2px solid royalblue;
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    button:hover {
+        background-color: royalblue;
+        color: white;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    /* Header styles */
+    .header {
+        color: white;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .text3d {
+        float: left;
+        width: 600px;
+        margin: 150px;
+        font-weight: bold;
+        font-size: x-large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .i1 img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Section container styles */
+    .section-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+    
+    /* Section styles */
+    .section {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease-in-out;
+        margin: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .section:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .section img {
+        max-width: 50%;
+        height: auto;
+        border-bottom: 2px solid #ddd;
+        margin-right: 0%;
+    }
+    
+    .text-content {
+        padding: 20px;
+        margin-left:40px ;
+    }
+    
+    .text-content h2 {
+        color: #333;
+    }
+    
+    .text-content p {
+        color: #666;
+    }
+    
+    /* Special section styles */
+    .special-section {
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+    
+    /* Footer styles */
+    footer {
+        background-color: #001E1E;
+        color: white;
+        padding: 20px;
+    }
+    
+    .contact-form {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .form-box {
+        flex: 1;
+    }
+    
+    .form-box input,
+    .form-box textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #555;
+        border-radius: 4px;
+    }
+    
+    .form-box button {
+        background-color: royalblue;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        padding: 10px;
+        transition: background-color 0.3s;
+    }
+    
+    .form-box button:hover {
+        background-color: #0056b3;
+    }
+    
+    .message-box {
+        flex: 1;
+    }
+    
+    .message-box h2,
+    .message-box p {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    label{
+      color: #ddd;
+    }
+    input{
+      width:300px;
+      height: 20px;
+    }
+    /* defines the animation */
+@keyframes fadeInUp {
+  from { 
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+p {
+   
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  &.nine {
+    animation-delay: 1s;
+  }
+  &.ten {
+    animation-delay: 2s;
+  }
+  &.el {
+    animation-delay: 3s;
+  }
+  &.tw {
+    animation-delay: 4s;
+  }
+  &.first {
+    animation-delay: 6s;
+  }
+  &.second {
+    animation-delay: 8s;
+  }
+  &.third {
+    animation-delay: 10s;
+  }
+  &.fourth {
+    animation-delay: 12s;
+  }
+  &.fifth {
+    animation-delay: 14s;
+  }
+  &.sixth {
+    animation-delay: 16s;
+  }
+  &.seventh{
+    animation-delay: 18s;
+  }
+  &.eight {
+    animation-delay: 20s;
+  }
+ }
+
+/* now add general css for page 
+ body {
+  background: #fff;
+  text-align: center;
+  font-size: 34px;
+  color: #424243;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+} */x
+
+p { 
+  margin: 10px 0;
+  display: inline-block; 
+  font-weight: 300;
+}
+
+.emphasis {
+  color: #fb6e67;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+body {padding: 0; margin: 0;}
+
+.container {position: fixed; top: 25%; left: 25%;}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1.5s;
+  -moz-animation-duration:1.5s;
+  animation-duration:1.5s;
+}
+
+.fade-in.six {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay:1.8s;
+  animation-delay: 1.8s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+.fade-in.four {
+  -webkit-animation-delay: 3.0s;
+  -moz-animation-delay: 3.0s;
+  animation-delay: 3.0s;
+}
+.fade-in.five {
+  -webkit-animation-delay: 3.7s;
+  -moz-animation-delay: 3.7s;
+  animation-delay: 3.7s;
+}
+.fade-in.seven {
+  -webkit-animation-delay: 4.5s;
+  -moz-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+
+/*---make a basic box ---
+.box{
+  width: 1900px;
+  height: 1900px;
+  position: relative;
+  margin: 10px;
+  float: left;
+  border: 1px solid #333;
+  background: #999;
+
+}*/
+.fadeinout
+{
+  animation: fadeinout 10s linear;
+}
+
+@keyframes fadeinout
+{
+  0%{
+    opacity:0;
+  }
+  100%
+  {
+    opacity:1;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="navbar box fade-in six">
+        <button ><a href="#home" onclick="homescroll()" class="nine">Home</a></button>
+        <button ><a href="#about" onclick="scrollToSection()"class="ten">About</a></button> 
+        <button ><a href="login.php" class="el">Login</a></button>
+        <a href="registration.php"class="tw">Register</a>
+    </div><br>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Website</title>
+</head>
+<body>
+      <div class="header box fade-in one" id="home" >
+        <div class="content-container">
+            <div class="text3d" >
+                <h1>Securing Power Infrastructure</h1>
+                <h5>"Ashwat" Solution for Optimal Vegetation Management</h5>
+            </div>
+            <div class="i1">
+                <img class="fadeinout" src="https://ashwatdotblog.files.wordpress.com/2023/10/ashwat-2-3.png?w=1200" alt="Ashwat Solution Image">
+            </div>
+        </div>  
+    </div><br>
+    <div class="section-container box fade-in two"  id="about" style="width: 1500px;height: 700px;display:block; margin-left:150px;border:2px solid red">
+    <div style="width: 1900px;">
+      <div style="width:500px;float:left">
+        <img class="fadeinout" src="https://ashwatdotblog.files.wordpress.com/2023/10/whatsapp-image-2023-10-07-at-10.03.44-pm.jpeg?w=460" alt="Environmental Impact" style="border-radius: 20px;" />
+      </div>
+      <div style="width: 900px;float:left">
+        <p style="font-size:50px;color:#333" class="first">Environmental impact assessment</p>
+        <p style="font-size: 30px ;color:#666" class="second">Evaluate the impact of infrastructure projects, such as highways or dams, on local vegetation.
+          Environmental Impact Assessment (EIA) is a systematic process that evaluates the potential environmental effects of a proposed project, plan, or program before it is carried out. The primary goal of EIA is to ensure that development activities are undertaken with full consideration of their potential impacts on the environment. This process helps in making informed decisions, minimizing adverse effects, and promoting sustainable development.</p>
+      </div>
+    </div>
+</div>
+<div class="section-container box fade-in two"  id="about" style="width: 1500px;height: 700px; display:block;margin-left:150px">
+  <div style="width: 1900px;">
+    <div style="width: 900px;float:left; margin-left:150px">
+      <p style="font-size:50px;color:#333" class="third">Wildfire prevention</p>
+      <p style="font-size: 30px ;color:#666" class="fourth">Identify areas with a high risk of wildfires based on vegetation density and dryness. Predict 
+        Wildfire prevention involves implementing strategies and practices to reduce the risk of wildfires and limit their potential impact on ecosystems, communities, and infrastructure. It encompasses a range of activities aimed at mitigating the conditions that can contribute to the ignition and spread of wildfires. </p>
+    </div>
+    <div style="width:500px;float:left">
+      <img class="fadeinout"  style="float:right;border-radius:20px" src="https://ashwatdotblog.files.wordpress.com/2023/10/whatsapp-image-2023-10-07-at-10.03.43-pm.jpeg?w=468" alt="Wildfire Prevention"  />
+    </div>
+  </div>
+</div>
+<div class="special-section box fade-in four" style="display: block;">
+    <section class="section">
+        <img class="fadeinout" src="https://ashwatdotblog.files.wordpress.com/2023/10/whatsapp-image-2023-10-07-at-10.03.42-pm.jpeg?w=800" alt="Railway Maintenance" style="float:left ;" />
+        <div class="text-content " style="float: left; width:500px; margin-left:150px">
+            <p style="font-size:50px;color:#333" class="fifth">Railway and pipeline maintenance</p>
+            <p style="font-size: 30px ;color:#666" class="sixth">Identify vegetation near power lines, railways, and roads to plan for maintenance and prevent hazards.Railway and pipeline maintenance involve systematic efforts to ensure the safe and efficient operation of railway infrastructure and pipelines, respectively. These maintenance activities are critical for preventing accidents, optimizing performance, and extending the lifespan of transportation systems. </p>
+        </div>
+    </section>
+
+    <section class="section">
+      <div class="text-content box fade-in five" style="float: left; width:800px; margin-left:150px">
+        <p style="font-size:50px;color:#333" class="seventh">Educational research</p>
+        <p style="font-size: 30px ;color:#666" class="eight">It serves as a valuable tool to raise awareness about responsible vegetation management and its impact on the environment.Educational research refers to the systematic investigation, analysis, and study of educational systems, practices, policies, and outcomes. The aim of educational research is to gain insights, generate knowledge, and inform decision-making processes related to teaching, learning, and educational policies. This type of research can take various forms, ranging from quantitative studies using statistical analysis to qualitative inquiries exploring the complexities of educational phenomenaS</p>
+    </div>
+        <img class="fadeinout" src="https://ashwatdotblog.files.wordpress.com/2023/10/whatsapp-image-2023-10-07-at-10.03.40-pm.jpeg?w=1024" alt="Educational Research" style="width: 500px; height:600px; float:right;border-radius:20px"/>
+    </section>
+</div>
+<footer style="height:370px;line-height:50px" class="box fade-in seven">
+     
+    <div class="contact-form">
+        <div class="form-box">
+            <label for="name">Name (required)</label>
+            <input type="text" id="name"  name="name" required>
+
+            <label for="email">Email (required)</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"  placeholder="Type your message here..." required style="color: black"></textarea>
+
+            <button type="submit">Send</button>
+        </div>
+        <div class="message-box" >
+            
+            <h2 style="color: #ddd; margin-left:20px">Let's chat</h2>
+            <p style="color: #ddd; margin-left:20px">Questions, comments, or requests? Feel free to reach out; we’d love to hear from you.</p>
+        </div>
+
+    </div>
+    </footer>
+    
+    </body>
+</html>
+<script>
+        function scrollToSection() {
+            document.getElementById('about').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        function homescroll() {
+            document.getElementById('home').scrollIntoView({
+                behavior: 'smooth'
+            });
+      }
+</script>

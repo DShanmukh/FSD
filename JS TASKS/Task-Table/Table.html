@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Table</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid #ddd;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  .add-button {
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<table id="data-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>price</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Realme</td>
+      <td>26,000</td>
+      <td>
+        <button class="remove-button" onclick="removeRow(this)">Remove</button>
+        <button class="add-button" onclick="addRow(this)">Add Row</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Realme</td>
+      <td>26,000</td>
+      <td>
+        <button class="remove-button" onclick="removeRow(this)">Remove</button>
+        <button class="add-button" onclick="addRow(this)">Add Row</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<script>
+function addRow() {
+  const table = document.getElementById('data-table').getElementsByTagName('tbody')[0];
+  const newRow = table.insertRow(table.rows.length);
+  const nameCell = newRow.insertCell(0);
+  const priceCell = newRow.insertCell(1);
+  const actionsCell = newRow.insertCell(2);
+  var cell1 = newRow.insertCell(0);
+var cell2 = newRow.insertCell(1);
+var cell3 = newRow.insertCell(2);
+
+cell1.innerHTML = "SGA";
+cell2.innerHTML = "2122";
+actionsCell.innerHTML = '<button class="remove-button" onclick="removeRow(this)">Remove</button>'; 
+}
+
+function removeRow(button) {
+  const row = button.parentNode.parentNode;
+  const table = document.getElementById('data-table').getElementsByTagName('tbody')[0];
+  table.removeChild(row);
+}
+</script>
+</body>
+</html>

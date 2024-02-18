@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String_Methods</title>
+</head>
+<body>
+  <script>
+   function string(str){
+      document.write("<b>"+str+"</b><br>");
+    }
+    let n ="Technical-Hub "
+    let k ="Registration"
+    let v = "Technical-Hub"
+    string(n)//string
+    string("Lower Case : "+n.toLocaleLowerCase())
+    string("Char At : "+n.charAt(5))
+    string("Value of : "+n.valueOf("e"))
+    string("Index of : "+n.indexOf("c"))
+    string("Includes : "+n.includes(n))
+    string("Search : "+n.search("h"))
+    string("Upper Case : "+n.toLocaleUpperCase())
+    string("Substring : "+n.substring(5))
+    string("Slice : "+n.slice(1,4))
+    string("Substr :"+n.substr("n"))
+    string("Replace : "+n.replace("a","s"))
+    string("concat : "+n.concat(k))
+    string("LastIndex Of : "+ n.lastIndexOf("c"))
+    string("Trim : "+n.trim().concat(k));
+    string("Split : "+n.split(""));
+    string("to String : " +n.toString(10))
+    string("Match : "+n.match(v))
+    string("charCodeAt : "+n.charCodeAt("e"))
+  </script>
+</body>
+</html>

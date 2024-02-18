@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regular Expressions</title>
+</head>
+<body>
+  <script>
+    // let s = /world/
+    // let o =s.test("Hello world")
+    // console.log(o)
+    // let s = /WORLD/i //i is used to convert the word into lowercase
+    // let o =s.test("Hello world")
+    // console.log(o)
+    // let s = /!/ ;
+    // let o =s.test("Hello world !")
+    // console.log(o)
+    // let s = /^s/i;// ^ is used check the first letter in the string
+    // let o = s.test("Shanmukh");
+    // let p = s.test("Dshanmukh");
+    // console.log(o);
+    // console.log(p);
+    // let s= /batch/i;
+    // let rev = new RegExp(`{s}`)
+    // let t = rev.test("Full Stack batch")
+    // console.log(t)
+    // let s= /World/i
+    //  res =s.exec("Hello world");
+    // console.log(res);
+    // console.log(res.index);
+    //  res =s.exec("Hello world . world is ");
+    // console.log(res.index);
+    r =/^[0-9]{10}/
+    o = r.test("9989120526")
+    p = r.test("15975345952879")
+    console.log(o)// o/p ---> true
+    console.log(p)// o/p ----> true
+    r =/^[0-9]{10}$/
+    o = r.test("9989120526")
+    p = r.test("15975345952879")
+    console.log(o)// o/p ---> true
+    console.log(p)// o/p ----> False
+  </script>
+</body>
+</html>

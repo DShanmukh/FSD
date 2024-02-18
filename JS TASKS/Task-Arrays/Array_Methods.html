@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function array(arr){
+      document.write("<br>"+arr +" <br><br>")
+    }
+    function get(arr)
+    {
+      return arr>=18;
+    }
+    const arr = [15,20,10,50,30,60]
+    const arr1 = [1,2,3,4,5,60]
+    let filtered = [15,20,30,50,60,12];
+    let g = filtered.filter(get)
+    array(arr.length);
+    let k = filtered.some(get);
+    let o = filtered.find(get);
+    let p = filtered.findIndex(get);
+    let y = filtered.indexOf(get);
+    array("Mapping : " + arr.map(Math.sqrt)+" ");
+    document.write("<br>Filter : "+g+"<br>")
+    array("SORTING : "+arr.sort())
+    document.write(arr+"<br>")
+    array("Concat : "+arr.concat(arr1))
+    document.write(arr+"<br>")
+    array("Include : "+arr.includes(10))
+    document.write(arr+"<br>")
+    array("Join : "+arr.join(" and "))
+    document.write(arr+"<br>")
+    array("Some : "+k)
+    document.write(arr+"<br>")
+    document.write("<br>Find :"+o+"<br>");
+    document.write(arr+"<br>")
+    array("slice : "+arr.slice(2,3));
+    document.write(arr+"<br>")
+    array("Reverse : "+arr.reverse());
+    document.write(arr+"<br>")
+    array("pop :"+arr.pop(10))
+    document.write(arr+"<br>")
+    array("Shift : "+arr.shift())
+    document.write(arr+"<br>")
+    array("Unshift : "+arr.unshift(4))
+    document.write(arr+"<br>")
+    array("Fill : "+arr.fill(10));
+    array("Find array Index : "+arr.findIndex(20))
+    document.write(y+"<br><br>")
+  </script>
+</body>
+</html>
